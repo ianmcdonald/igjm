@@ -1,70 +1,69 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: system-ui, -apple-system, sans-serif;
+    /* font-family: system-ui, -apple-system, sans-serif; */
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 16px;
-    max-width: 40em;
-    margin: 4em auto;
-    padding: 0 1em;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #121212;
     background: #ffffff;
 }
 
-header {
-    margin-bottom: 4em;
+main {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: 1em;
 }
 
-h1, p {
+header {
+    margin: 0 0 8em 0;
+    padding: 0;
+}
+
+article {
+    margin: 8em auto;
+}
+
+footer {
+    min-height: 50vh;
+    padding: 0;
+    margin: 8em auto;
+    font-style: italic;
+}
+
+h1 {
     font-size: 1em;
     font-weight: normal;
-    margin: 0;
+    margin: 0 0 2em 0;
 }
 
-.updated {
-    font-size: 0.75em;
-    color: #888;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-    padding: 0.5em 0;
-    border-bottom: 1px solid #888;
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 0.75em;
-}
-
-li a {
-    word-break: break-word;
+p {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 0 2em 0;
 }
 
 a {
     color: inherit;
-    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #888;
-}
-
-.date {
-    color: #888;
-    white-space: nowrap;
+::selection {
+    background: #121212;
+    color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         color: #ffffff;
         background: #121212;
+    }
+
+    ::selection {
+        background: #ffffff;
+        color: #121212;
     }
 }
